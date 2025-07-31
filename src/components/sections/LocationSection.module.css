@@ -183,6 +183,9 @@
   .imagePlaceholder {
     height: 150px;
   }
+  .bottomIcon {
+    margin-bottom: 0.7rem;
+  }
   .diamondIcon {
     font-size: 1rem;
   }
