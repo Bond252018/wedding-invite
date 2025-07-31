@@ -5,7 +5,8 @@ const SupportSection = () => {
   return (
     <section className={styles.supportSection}>
       <div className={styles.supportContent}>
-        <h2 className={styles.supportTitle}>🎁 ИНСТРУКЦИЯ: ПОДАРКИ</h2>
+        <h2 className={styles.supportTitle}>СЕКРЕТНО.<br />
+            🎁 РАЗДЕЛ: ПОДАРКИ</h2>
         <div className={styles.supportList}>
           <div className={styles.supportItem}>
             <span className={styles.supportText}>
@@ -26,7 +27,7 @@ const SupportSection = () => {
           </div>
           <div className={styles.supportItem}>
             <span className={styles.supportText}>
-              <strong> Цветы в миссии бесполезны, а вот бутылка может изменить ход событий.</strong>
+              <strong>Цветы в миссии бесполезны, а вот бутылка может изменить ход событий.</strong>
             </span>
           </div>
         </div>

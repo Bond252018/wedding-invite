@@ -26,7 +26,7 @@
 }
 
 .actionText p {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 1.1rem;
   line-height: 1.6;
   color: #333;
@@ -34,6 +34,7 @@
 }
 
 .missionList {
+  font-family: 'Ubuntu', sans-serif;
   list-style: none;
   padding: 0;
   margin: 1rem 0;
@@ -52,7 +53,7 @@
 }
 
 .ps p {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 0.9rem;
   line-height: 1.5;
   color: #333;
