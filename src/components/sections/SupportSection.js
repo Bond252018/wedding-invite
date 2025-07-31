@@ -26,7 +26,7 @@ const SupportSection = () => {
           </div>
           <div className={styles.supportItem}>
             <span className={styles.supportText}>
-              <strong> Важно: Цветы в миссии бесполезны, а вот бутылка может изменить ход событий.</strong>
+              <strong> Цветы в миссии бесполезны, а вот бутылка может изменить ход событий.</strong>
             </span>
           </div>
         </div>
