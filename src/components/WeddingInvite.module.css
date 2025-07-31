@@ -1,0 +1,61 @@
+.weddingInvite {
+  background-color: #7C8D6B;
+  min-height: 100vh;
+  position: relative;
+}
+
+.musicToggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.musicToggle:hover {
+  transform: scale(1.1);
+  background: white;
+}
+
+.musicToggle.playing {
+  background: #ededed;
+  color: #333;
+  animation: musicPulse 2s ease-in-out infinite;
+}
+
+@keyframes musicPulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.musicToggle svg {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 768px) {
+  .musicToggle {
+    top: 15px;
+    right: 15px;
+    width: 45px;
+    height: 45px;
+  }
+  
+  .musicToggle svg {
+    width: 20px;
+    height: 20px;
+  }
+} 

@@ -1,0 +1,112 @@
+.greetingSection {
+  padding: 4rem 2rem;
+  background-color: #ededed;
+  position: relative;
+}
+
+.greetingSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  background: linear-gradient(to bottom, #fff, transparent);
+}
+
+.greetingContent {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.greetingHeader {
+  margin-bottom: 2rem;
+}
+
+.greetingTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+  line-height: 1.2;
+  animation: fadeInUp 1s ease-out;
+}
+
+.greetingTitle:nth-child(2) {
+  animation-delay: 0.2s;
+  animation-fill-mode: both;
+}
+
+.greetingText {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: 333;
+  animation: fadeInUp 1s ease-out 0.4s both;
+}
+
+.greetingText p {
+  margin: 0;
+}
+
+.greetingTime {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.redTime {
+  color: #ff8c8c;
+}
+
+.highlight {
+  color: #333;
+  font-weight: 600;
+}
+
+.missionList {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  text-align: left;
+}
+
+.missionList li {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #333;
+  padding-left: 1rem;
+}
+
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .greetingSection {
+    padding: 3rem 1rem;
+  }
+  
+  .greetingTitle {
+    font-size: 1.5rem;
+  }
+  
+  .greetingText {
+    font-size: 1rem;
+  }
+  .greetingTime {  
+    font-size: 0.95rem;
+  }
+} 

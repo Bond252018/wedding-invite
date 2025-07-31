@@ -1,0 +1,90 @@
+.actionSection {
+  padding: 4rem 2rem;
+  background-color: #ededed;
+  position: relative;
+}
+
+.actionContent {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.actionTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.5rem;
+  animation: fadeInUp 1s ease-out;
+}
+
+.actionText {
+  margin-bottom: 2rem;
+  animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+.actionText p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+}
+
+.missionList {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  text-align: left;
+}
+
+.missionList li {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #333;
+  padding-left: 1rem;
+}
+
+.ps {
+  animation: fadeInUp 1s ease-out 0.6s both;
+}
+
+.ps p {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+.ps p:first-child {
+  font-weight: 600;
+  color: #333;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .actionSection {
+    padding: 3rem 1rem;
+  }
+
+  .actionTitle {
+    font-size: 1.5rem;
+  }
+
+  .actionText p {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,164 @@
+.countdownSection {
+  padding: 4rem 2rem;
+  background-color: #000;
+  position: relative;
+}
+
+.countdownContent {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.countdownImage {
+  margin-bottom: 2rem;
+  animation: fadeInUp 1s ease-out;
+}
+
+.countdownPhoto {
+  width: 100%;
+  height: 428px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  object-position: 50% 24%;
+}
+
+.countdownPhoto:hover {
+  transform: scale(1.02);
+}
+
+.countdownText {
+  margin-bottom: 2rem;
+  animation: fadeInUp 1s ease-out 0.3s both;
+}
+
+.countdownTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.countdownTimer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.timeUnit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 60px;
+}
+
+.timeNumber {
+  font-family: 'Inter', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  animation: numberPulse 1s ease-in-out infinite;
+}
+
+.timeLabel {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.timeSeparator {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  animation: separatorBlink 1s ease-in-out infinite;
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes numberPulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes separatorBlink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: 768px) {
+  .countdownSection {
+    padding: 3rem 1rem;
+  }
+  
+  .countdownTitle {
+    font-size: 1.2rem;
+  }
+  
+  .countdownTimer {
+    gap: 0.8rem;
+  }
+  
+  .timeUnit {
+    min-width: 50px;
+  }
+  
+  .timeNumber {
+    font-size: 1.5rem;
+  }
+  
+  .timeLabel {
+    font-size: 0.7rem;
+  }
+  
+  .timeSeparator {
+    font-size: 1.2rem;
+  }
+  
+  .imagePlaceholder {
+    height: 200px;
+  }
+  
+  .socialIcons {
+    gap: 1rem;
+  }
+} 
