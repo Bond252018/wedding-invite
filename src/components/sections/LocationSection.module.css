@@ -183,4 +183,7 @@
   .imagePlaceholder {
     height: 150px;
   }
+  .diamondIcon {
+    font-size: 1rem;
+  }
 } 
