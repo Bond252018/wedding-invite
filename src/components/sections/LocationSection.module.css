@@ -184,7 +184,8 @@
     height: 150px;
   }
   .bottomIcon {
-    margin-bottom: 0.7rem;
+    margin-bottom: 0.6rem;
+    margin-right: 0.1rem;
   }
   .diamondIcon {
     font-size: 1rem;
