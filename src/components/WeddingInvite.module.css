@@ -5,6 +5,7 @@
 }
 
 .musicToggle {
+  all: unset; 
   position: fixed;
   top: 20px;
   right: 20px;
@@ -20,14 +21,24 @@
   transition: all 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  -webkit-user-select: none;
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  background-color: #ededed;
+}
+
+.musicToggle:focus,
+.musicToggle:active {
+  outline: none;
+  box-shadow: none;
+  background-color: inherit;
 }
 
 .musicToggle:hover {
   transform: scale(1.1);
-  background: white;
+  background: #ededed;
 }
 
 .musicToggle.playing {
